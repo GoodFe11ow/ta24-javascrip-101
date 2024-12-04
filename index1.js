@@ -1,5 +1,5 @@
 //global scope
-const fullname = "Karl";
+const fullname = "Karl Rauniste";
 
 //DATA TYPES
 // string => "See", 'See on ka', `ja see`  
@@ -14,7 +14,9 @@ const fullname = "Karl";
 const fruit = "banan"; // var wich is non change
 let model = "BMW";// var is can change
 
-model = "audi";
+const nullableVariable = null; // null have is no value falsy
+
+const undefindValue = undefined; //
 
 //Koodiblokk => SCOPE
 //function scope 
@@ -60,3 +62,13 @@ characters.forEach((char) => {
 characters.map((char) => {
     console.log("For map: ", char)
 });
+
+/** Comparison - Vordlus
+== vs === vs Object.is()
+Object.is is same as ===
+*/
+// == compares value of both sides. As values they ar both equal: 5 = "5"
+console.log(5 == "5"); //returns true
+
+// === compares of value and data types  of both sides. number  5 is not equal to string "5"
+console.log(5 === "5") //return false
